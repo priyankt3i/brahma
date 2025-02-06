@@ -121,23 +121,8 @@ if st.button("Start Thinking"):
             validation_end = validation.find("\n", validation_start)
             validation_text = validation[validation_start:validation_end]
             st.write(f"❎ **Invalid Thought!** {validation_text}")
-       
-        summary_start = validation.find("Summary: ") + 9
-        summary_end = validation.find(")", summary_start)
-        summary_text = validation[summary_start:summary_end]
 
-        # Split summary text into words
-        words = summary_text.split()
-
-        # Make first word bold
-        first_word = f"**{words[0]}**"
-        remaining_words = " ".join(words[1:])
-
-        # Join bold first word with remaining words
-        bold_summary_text = f"{first_word} {remaining_words}"
-
-        st.write(bold_summary_text)
-
+        ###
         # Expand thought
         new_thought = expand_thought(thought)
         st.write(f"💭 **Expanded Thought:**")
