@@ -105,4 +105,4 @@ Brahma is a powerful thought engine that doesn’t just generate random thoughts
 
 ---
 
-Feel free to modify or expand the README depending on how you'd like to present the project. This should give a solid foundation for explaining the logic, setup, and reasoning behind **Brahma**.
+
